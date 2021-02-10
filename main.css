@@ -1,11 +1,13 @@
 
 *
 {
-    font-size: 20px;
+    font-size: 25px;
     font-family: arial;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    top: -25px;
 }
 body
 {
@@ -17,7 +19,6 @@ body
 #titulo
 {
     background-image: url('fondo.gif');
-    background-repeat: repeat-x;
     border-radius: 4px;
     width: max-content;
     margin-top: 170px;
@@ -40,10 +41,34 @@ body
     border-right: none;
     border-color: orange;  
 }
-@media screen and (min-width:655px) {
-    header
-    {
-        position: relative;
-        top: -65px;
-    }
-    }
+/* resolucion pantallas pequeñas */
+@media screen and (min-width:280px) 
+{
+   * {font-size: 20px;} 
+  
+}
+@media screen and (orientation: landscape) and (max-width:653px) {header{position: relative;top: -40px;}}
+
+/* resolucion pantallas medianas */
+@media screen and (min-width:360px)
+{
+   * {font-size: 25px;}
+   
+}
+@media screen and (orientation: landscape) and (max-width:812px) {body{position: relative;top: 0;}} 
+/* resolucion pantallas grandes */
+@media screen and (min-width:768px)
+{
+   * {font-size: 60px;}
+}
+@media screen and (orientation: landscape) and (max-width:900px) 
+{
+    * {overflow: hidden;}
+  input[type='text'],h1,input[type='submit']{max-width: 100%;font-size: 25px;position: relative;top: -100px; }
+
+} 
+/* resolucion pantallas muy grandes */
+@media screen and (min-width:1020px)
+{
+   * {font-size: 80px;}
+}
