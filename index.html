@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Game</title>
+        <meta charset="UTF-8">
+        <link rel=StyleSheet href="main.css" type="text/css" media=screen>
+    </head>
+    <body id="body">
+    <header>
+        <h1 id="titulo">Carrera de vengadores</h1>
+    <form>
+        <input onclick="ventanaJuego()" id="iniciarJuego" type="submit" value="Iniciar juego">
+        <input style="display: block;" type="text" placeholder="Jugador 1" id="jugador1" required>
+        <input style="display: block;" type="text" placeholder="Jugador 2" id="jugador2" required>
+    </form>
+    <span hidden>Tiempo: <b id="tiempo">120 Segundos</b></span>
+    </header>
+        <script src="index.js"></script>
+    </body>
+</html>
