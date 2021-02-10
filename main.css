@@ -1,3 +1,4 @@
+
 *
 {
     font-size: 20px;
@@ -8,13 +9,10 @@
 }
 body
 {
-    background-color: rgb(170, 150, 113);
+   
     background-repeat: no-repeat;
-    background-size: contain;
-    
+    background-size: contain;   
     align-items: center;
-  
-    
 }
 #titulo
 {
@@ -32,26 +30,20 @@ body
     border: none;
     padding: 14px;
     box-shadow: 0px 5px 7px 3px;
-    @media screen and (min-width:1024px) {
-*
- {
-     background-color: orange;
-     width: 700px;
-     font-size: 50px;
-     margin-top: auto;
-}
-}
-   
-
 }
 #jugador1,#jugador2
 {
-
     margin-top: 15px;
     border-radius: 3px;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-color: orange;
-   
+    border-color: orange;  
 }
+@media screen and (min-width:655px) {
+    header
+    {
+        position: relative;
+        top: -65px;
+    }
+    }
